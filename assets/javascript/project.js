@@ -18,8 +18,6 @@ function searching (){
 for(var i = 0; i < results.length; i++) {
     var articleDiv = $('<div>');
     var articleNameDiv = $('<h3>').text(results[i].headline.main);
-   $(this).wrap(<"a href=", results[i].web_url);
-
     var authorDiv = $('<small>').text(results[i].byline.original);
     articleDiv.append(articleNameDiv);
     articleDiv.append(authorDiv);
